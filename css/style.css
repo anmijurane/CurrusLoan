@@ -10,10 +10,49 @@
  |____/ \__|\__, |_|\___|  \____|____/____/             
             |___/                               
 */
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Quicksand:300,400&display=swap&subset=latin-ext');
 
 html, body {
     padding: 0px;
     margin: 0px;    
-
+    font-family: 'Quicksand';
 }
 
+nav{
+  display: flex;
+  background-color: #2D882D;
+  padding: 10px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{ 
+  padding-right: 18px;
+  list-style: none;
+}
+
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color:orangered;
+}
+
+
+
+
+
+/* //Colores de Paleta\\
+
+verde: 2D882D
+verde amarillo: 7A9F35
+Azul: 226666
+
+*/
