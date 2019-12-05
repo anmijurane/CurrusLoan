@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="Navegation_Bar">
+        <div class="img_logo">
+            <img src="images/Logo.png" alt="Logo Currus Loan" srcset="" height="100px">
+        </div>
+        <div class="options">
+            <ul>
+                <li><a class="nav-link" href="">Inicio</a></li>
+                <li><a class="nav-link" href="">Renta tu auto</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mi cuenta
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+    </nav>
+    <h3> Registro </h3>
+    <div class="col-md-6 mb-3">
+        <label for="Nombre(s)"> Nombre(s) </label>
+        <input class="form-control" id="Nombre(s)" required="" type="text" placeholder="" value="" />
+        <!--<div class="invalid-feedback" > Inserta un nombre valido </div>-->
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="Apellido"> Apellido </label>
+            <input class="form-control" id="Apellido" required="" type="text" placeholder="" value="" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="Usuario"> Usuario </label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> @ </span>
+            </div>
+            <input class="form-control" id="Usuario" required="" type="text" placeholder="Usuario">
+        </div>
+    </div>
+    <label for="email">
+        Email
+        <span class="text-muted"> (Optional) </span>
+    </label>
+    <input class="form-control" id="email" type="email" placeholder="you@example.com">
+    <label for="address">Direccion</label>
+    <input class="form-control" id="address" required="" type="text" placeholder="1234 Main st">
+    <div class="row">
+        <div class="col-md-5 mb-3">
+            <label for="ciudad"> Ciudad </label>
+            <select class="custom-select d-block w-100" id="ciudad" required="">
+                <option value="">Escoger</option>
+                <option> Mexico </option>
+            </select>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="estado">Estado</label>
+            <select class="custom-select d-block w-100" id="estado" required="">
+                <option value="">Escoger</option>
+                <option> Michoacan </option>
+            </select>
+        </div>
+    </div>
+    <div class="d-block my-3">
+        <div class="custom-control custom-radio">
+            <input name="paymentMeethod" class="custom-control-input" id="credit" required="" type="radio" checked="" />
+            <label class="custom-control-label" for="credit"> Tarjeta de Credito </label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input name="paymentMeethod" class="custom-control-input" id="debito" required="" type="radio" checked="" />
+            <label class="custom-control-label" for="debito"> Tarjeta de Debito </label>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="cc-name"> Nombre de la Tarjeta </label>
+                <input class="form-control" id="cc-name" required="" type="text" placeholder="" />
+                <small class="text-muted"> Nombre completo de la Tarjeta </small>
+            </div>
+            <div>
+                <label for="cc-number"> Numero de tarjeta </label>
+                <input class="form-control" id="cc-number" required="" type="text" placeholder="" />
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiracion</label>
+            <input class="form-control" id="cc-expiration" required="" type="text" placeholder="" />
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="cc-ccv"> CVV </label>
+            <input class="form-control" id="cc-expiration" required="" type="text" placeholder="" />
+        </div>
+        <hr class="mb-4" />
+        <button id="btn-enviar" class="btn btn-lg btn-block" type="submit"> Enviar </button>
+    </div>
+</body>
+
+</html>

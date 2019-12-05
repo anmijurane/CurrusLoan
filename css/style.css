@@ -58,6 +58,13 @@ nav li a {
 nav li a:hover {
   color:#FFC59A;
 }
+#imagenre{
+  position: absolute;  
+  z-index: auto;
+  width: 100%;
+  height: 165%;
+  opacity: 65%;
+}
 
 .main_layout{
   display: flex;  
@@ -73,6 +80,13 @@ nav li a:hover {
   height: 50px;
   width: 50px;
   position: relative;
+}
+
+#btn-enviar{
+  background: #65A7A0;
+  border: 1px solid;
+  width: 100px ;
+  border-radius: 25px;
 }
 
 .btn-primary{
