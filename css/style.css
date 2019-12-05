@@ -123,6 +123,11 @@ nav li a:hover {
   margin: 40px;
 }
 
+.container {
+  max-width: 960px;
+}
+
+.lh-condensed { line-height: 1.25; }
 
 
 /* //Colores de Paleta\\
