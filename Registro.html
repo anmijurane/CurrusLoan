@@ -8,138 +8,250 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-
-    <style>
-        .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-    </style>
+    <link rel="stylesheet" href="css/resgit.css">
+    <title>Registrate</title>
 
 </head>
 
-<body>
-    <nav class="Navegation_Bar">
-        <div class="img_logo">
-            <img src="images/Logo.png" alt="Logo Currus Loan" srcset="" height="100px">
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="images/Logo_simple.png" alt="" width="72" height="72">
+            <h1 id="Title_CL">Currus Loan</h1>
+            <h2 class="lead" id="Title_CL">Registrate para la experiencia 'Loan'</h2>
         </div>
-        <div class="options">
-            <ul>
-                <li><a class="nav-link" href="">Inicio</a></li>
-                <li><a class="nav-link" href="">Renta tu auto</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Mi cuenta
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
-    </nav>
-    <h3> Registro </h3>
-    <div class="col-md-6 mb-3">
-        <label for="Nombre(s)"> Nombre(s) </label>
-        <input class="form-control" id="Nombre(s)" required="" type="text" placeholder="" value="" />
-        <!--<div class="invalid-feedback" > Inserta un nombre valido </div>-->
-    </div>
-    <div class="row">
-        <div class="col-md-6 mb-3">
-            <label for="Apellido"> Apellido </label>
-            <input class="form-control" id="Apellido" required="" type="text" placeholder="" value="" />
-        </div>
-    </div>
-    <div class="mb-3">
-        <label for="Usuario"> Usuario </label>
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"> @ </span>
-            </div>
-            <input class="form-control" id="Usuario" required="" type="text" placeholder="Usuario">
-        </div>
-    </div>
-    <label for="email">
-        Email
-        <span class="text-muted"> (Optional) </span>
-    </label>
-    <input class="form-control" id="email" type="email" placeholder="you@example.com">
-    <label for="address">Direccion</label>
-    <input class="form-control" id="address" required="" type="text" placeholder="1234 Main st">
-    <div class="row">
-        <div class="col-md-5 mb-3">
-            <label for="ciudad"> Ciudad </label>
-            <select class="custom-select d-block w-100" id="ciudad" required="">
-                <option value="">Escoger</option>
-                <option> Mexico </option>
-            </select>
-        </div>
-        <div class="col-md-4 mb-3">
-            <label for="estado">Estado</label>
-            <select class="custom-select d-block w-100" id="estado" required="">
-                <option value="">Escoger</option>
-                <option> Michoacan </option>
-            </select>
-        </div>
-    </div>
-    <div class="d-block my-3">
-        <div class="custom-control custom-radio">
-            <input name="paymentMeethod" class="custom-control-input" id="credit" required="" type="radio" checked="" />
-            <label class="custom-control-label" for="credit"> Tarjeta de Credito </label>
-        </div>
-        <div class="custom-control custom-radio">
-            <input name="paymentMeethod" class="custom-control-input" id="debito" required="" type="radio" checked="" />
-            <label class="custom-control-label" for="debito"> Tarjeta de Debito </label>
-        </div>
+
+        <!--
         <div class="row">
-            <div class="col-md-6 mb-3">
-                <label for="cc-name"> Nombre de la Tarjeta </label>
-                <input class="form-control" id="cc-name" required="" type="text" placeholder="" />
-                <small class="text-muted"> Nombre completo de la Tarjeta </small>
+            <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Your cart</span>
+                    <span class="badge badge-secondary badge-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">Product name</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">Second product</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">Third item</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success">
+                            <h6 class="my-0">Promo code</h6>
+                            <small>EXAMPLECODE</small>
+                        </div>
+                        <span class="text-success">-$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (USD)</span>
+                        <strong>$20</strong>
+                    </li>
+                </ul>
+
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div>
-                <label for="cc-number"> Numero de tarjeta </label>
-                <input class="form-control" id="cc-number" required="" type="text" placeholder="" />
-            </div>
+        -->
+        <div class="col-md-15 order-md-1">
+            <h4 class="mb-3">Ingresa tus datos</h4>
+            <h6><span class=""> * Campo Obligatorio </span></h6>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">Nombre <span class="span-etiq">*</span></label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Llena este campo
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Apellidos <span class="span-etiq">*</span></label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Llena este campo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="username">Usuario <span class="span-etiq">*</span></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span style="color: blue;" class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="username" placeholder="CurrusLoan" required>
+                        <div class="invalid-feedback" style="width: 100%;">
+                            Un usuario es requerido
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="email">Email <span class="span-etiq">*</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="TuCorreo@example.com">
+                    <div class="invalid-feedback">
+                        Por favor ingresa un correo valido
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="address">Telefono</label>
+                    <input type="text" class="form-control" id="address" placeholder="XX-XX-XX-XX-XX" required>
+                    <div class="invalid-feedback">
+                        Ingresa un número de telefono
+                    </div>
+                </div>
+            </div>    
+            <hr class="mb-4">
+                <div class="row">
+                    <div class="col-md-5 mb-3">
+                        <label for="country">Estado</label>
+                        <select class="custom-select d-block w-100" id="country" required>
+                            <option value="">Elige un Estado</option>
+                            <option>Aguascalientes</option>
+                            <option>Baja California</option>
+                            <option>Baja California Sur</option>
+                            <option>Campeche</option>
+                            <option>Chiapas</option>
+                            <option>Chihuahua</option>
+                            <option>Coahuila de Zaragoza</option>
+                            <option>Colima</option>
+                            <option>Durango</option>
+                            <option>Estado de México</option>
+                            <option>Guanajuato</option>
+                            <option>Guerrero</option>
+                            <option>Hidalgo</option>
+                            <option>Jalisco</option>
+                            <option>Michoacán de Ocampo</option>
+                            <option>Morelos</option>
+                            <option>Nayarit</option>
+                            <option>Nuevo León</option>
+                            <option>Oaxaca</option>
+                            <option>Puebla</option>
+                            <option>Querétaro</option>
+                            <option>Quintana Roo</option>
+                            <option>San Luis Potosí</option>
+                            <option>Sinaloa</option>
+                            <option>Sonora</option>
+                            <option>Tabasco</option>
+                            <option>Tamaulipas</option>
+                            <option>Tlaxcala</option>
+                            <option>Veracruz de Ignacio de la Llave</option>
+                            <option>Yucatán</option>
+                            <option>Zacatecas</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor, elige un estado valido
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="zip">C.P.</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Ingresa un C.P.
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+
+                <h4 class="mb-3">Forma de Pago</h4>
+
+                <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked
+                            required>
+                        <label class="custom-control-label" for="credit">Tarjeta de Credito</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input text-muted"
+                            required>
+                        <label class="custom-control-label" for="paypal">PayPal</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-name">Nombre de la tarjeta</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                        <small class="text-muted">Nombre completo como aparece en la tarjeta</small>
+                        <div class="invalid-feedback">
+                            Se requiere un nombre
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-number">Número de la tarjeta</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Se requiere un número
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">Vencimiento (MM/YY)</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Se requiere fecha de expiración
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-cvv">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Se requiere código de seguridad
+                        </div>
+                    </div>
+                </div>
+                <div col-md-3 mb-3>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="same-address">
+                        <label class="custom-control-label" for="same-address">Agregar más tarde</label>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Registrar</button>
+            </form>
         </div>
-        <div class="col-md-3 mb-3">
-            <label for="cc-expiration">Expiracion</label>
-            <input class="form-control" id="cc-expiration" required="" type="text" placeholder="" />
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="cc-ccv"> CVV </label>
-            <input class="form-control" id="cc-expiration" required="" type="text" placeholder="" />
-        </div>
-        <hr class="mb-4" />
-        <button id="btn-enviar" class="btn btn-lg btn-block" type="submit"> Enviar </button>
     </div>
 
-    <script src="/js/bootstrap.bundle.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-    <script src="js/form-validation.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/scrip.js"></script>
-
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2019 Currus Loan</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacidad</a></li>
+            <li class="list-inline-item"><a href="#">Terminos</a></li>
+            <li class="list-inline-item"><a href="#">Nosotros</a></li>
+        </ul>
+    </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
+    <script src="form-validation.js"></script>
 </body>
 
 </html>

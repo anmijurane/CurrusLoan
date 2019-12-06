@@ -1,0 +1,33 @@
+body{
+    
+}
+
+.btn-primary {
+    background: #65A7A0;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.btn-primary:hover {
+    background: #ffffff;
+    color: #65A7A0;
+    border-color: #65A7A0;
+}
+
+.btn-primary{
+    width: 150px;
+    background-position-y: right;
+}
+
+#Title_CL{
+    color: #65A7A0;
+}
+
+h6 span {
+    color: red;
+    opacity: 50%;
+}
+
+.span-etiq{
+    color: red;    
+}
