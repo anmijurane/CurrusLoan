@@ -8,38 +8,46 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/resgit.css">
+    <link rel="stylesheet" href="css/signini.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Bienvenido</title>
 </head>
 
-<body> 
-
-    <nav class="Navegation_Bar">
-        <div class="img_logo">
-            <img src="images/Logo.png" alt="Logo Currus Loan" srcset="" height="100px">
-        </div>
-        <div class="options">
-            <ul>
-                <li><a class="nav-link" href="">Inicio</a></li>
-                <li><a class="nav-link" href="">Renta tu auto</a></li>
+<body class="bg-light">
+    <nav id="var-style" class="navbar navbar-expand-lg navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-Loan" src="images/Logo_simple.png" alt="" srcset="">
+            </a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a id="Et-a" class="nav-link" href="#">Inicio <span class="sr-only">(...)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="Et-a" class="nav-link" href="#">Renta tu coche</a>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Mi cuenta
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Ajustes</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <a id="Et-a" class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Mi Cuenta</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Cuenta</a>
+                        <a class="dropdown-item" href="#">Historial</a>
+                        <a class="dropdown-item" href="#">Cerrar Sesion</a>
                     </div>
                 </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 search-inp" type="search" aria-label="Buscar">
+                <button style="width: 65px;" class="btn btn-primary my-2 my-sm-0 btn-search"
+                    type="submit">Busar</button>
+            </form>
         </div>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
     </nav>
 
     <br>
@@ -47,12 +55,12 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
 
-            <div class="col mb-4">
+            <div class="col mb-4 col mb-6">
                 <div class="card h-100">
                     <img src="images/AveoTj1.jpeg" class="card-img-top" alt="AveoImg">
                     <div class="card-body">
                         <h5 class="card-title">Aveo 2011</h5>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 15rem;">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <ul class="list-group-item">
@@ -180,12 +188,23 @@
                         </div>
                     </div>
                     <button type="button" class="btn btn-primary btn-lg">Ver más</button>
-                </div>                
+                </div>
             </div>
 
-        </div> <!--row row-cols-1 row-cols-md-3-->
-    </div> <!--container-->
+        </div>
+        <!--row row-cols-1 row-cols-md-3-->
+    </div>
+    <!--container-->
 
+
+    <footer class="my-5 pt-5 text-muted text-center text-small" id="footer-style">
+        <p class="mb-1">&copy; 2019 Currus Loan</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacidad</a></li>
+            <li class="list-inline-item"><a href="#">Terminos</a></li>
+            <li class="list-inline-item"><a href="#">Nosotros</a></li>
+        </ul>
+    </footer>
     <script src="js/scrip.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.js"></script>
