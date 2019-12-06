@@ -25,10 +25,10 @@
             </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a id="Et-a" class="nav-link" href="#">Inicio <span class="sr-only">(...)</span></a>
+                    <a id="Et-a" class="nav-link" href="index.html">Inicio <span class="sr-only">(...)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a id="Et-a" class="nav-link" href="#">Renta tu coche</a>
+                <li class="nav-item ">
+                    <a id="Et-a" class="text-muted nav-link" href="#">Renta tu coche</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a id="Et-a" class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
@@ -42,7 +42,8 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2 search-inp" type="search" aria-label="Buscar">
-                <button style="width: 65px;" class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">Busar</button>
+                <button style="width: 65px;" class="btn btn-primary my-2 my-sm-0 btn-search"
+                    type="submit">Busar</button>
             </form>
         </div>
     </nav>
@@ -141,6 +142,25 @@
                 </div>
 
                 <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Contraseña">Contraseña <span class="span-etiq">*</span></label>
+                        <input type="password" class="form-control" id="password" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Llena este campo
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="ConfContraseña">Confirmar contraseña <span class="span-etiq">*</span></label>
+                        <input type="password" class="form-control" id="ConfPass" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Llena este campo
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
                     <div class="col-md-4 mb-3">
                         <label for="email">Email <span class="span-etiq">*</span></label>
                         <input type="email" class="form-control" id="email" placeholder="TuCorreo@example.com">
@@ -161,6 +181,7 @@
                 <div class="row">
                     <div class="col-md-5 mb-3">
                         <label for="country">Estado</label>
+                        <span class="span-etiq">*</span>
                         <select class="custom-select d-block w-100" id="country" required>
                             <option value="">Elige un Estado</option>
                             <option>Aguascalientes</option>
@@ -201,6 +222,7 @@
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="zip">C.P.</label>
+                        <span class="span-etiq">*</span>
                         <input type="text" class="form-control" id="zip" placeholder="" required>
                         <div class="invalid-feedback">
                             Ingresa un C.P.
@@ -269,7 +291,7 @@
     </div>
 
     <footer class="my-5 pt-5 text-muted text-center text-small" id="footer-style>
-        <p class="mb-1">&copy; 2019 Currus Loan</p>
+        <p class=" mb-1">&copy; 2019 Currus Loan</p>
         <ul class="list-inline">
             <li class="list-inline-item"><a href="#">Privacidad</a></li>
             <li class="list-inline-item"><a href="#">Terminos</a></li>

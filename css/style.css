@@ -59,6 +59,7 @@ nav li a {
 nav li a:hover {
   color:#FFC59A;
 }
+
 #imagenre{
   position: absolute;  
   z-index: auto;
