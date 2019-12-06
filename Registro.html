@@ -6,19 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/resgit.css">
     <title>Registrate</title>
-
 </head>
 
 <body class="bg-light">
+    <nav id="var-style" class="navbar navbar-expand-lg navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-Loan" src="images/Logo_simple.png" alt="" srcset="">
+            </a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a id="Et-a" class="nav-link" href="#">Inicio <span class="sr-only">(...)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="Et-a" class="nav-link" href="#">Renta tu coche</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="Et-a" class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Mi Cuenta</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Cuenta</a>
+                        <a class="dropdown-item" href="#">Historial</a>
+                        <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 search-inp" type="search" aria-label="Buscar">
+                <button style="width: 65px;" class="btn btn-primary my-2 my-sm-0 btn-search" type="submit">Busar</button>
+            </form>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="images/Logo_simple.png" alt="" width="72" height="72">
+            <!--<img class="d-block mx-auto mb-4" src="images/Logo_simple.png" alt="" width="85" height="100">-->
             <h1 id="Title_CL">Currus Loan</h1>
-            <h2 class="lead" id="Title_CL">Registrate para la experiencia 'Loan'</h2>
+            <h2 class="lead" id="Title_CL">Registrate para la experiencia Loan</h2>
         </div>
 
         <!--
@@ -71,8 +104,8 @@
                         </div>
                     </div>
                 </form>
-            </div>
-        -->
+            </div>  -->
+
         <div class="col-md-15 order-md-1">
             <h4 class="mb-3">Ingresa tus datos</h4>
             <h6><span class=""> * Campo Obligatorio </span></h6>
@@ -107,24 +140,24 @@
                     </div>
                 </div>
 
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <label for="email">Email <span class="span-etiq">*</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="TuCorreo@example.com">
-                    <div class="invalid-feedback">
-                        Por favor ingresa un correo valido
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="email">Email <span class="span-etiq">*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="TuCorreo@example.com">
+                        <div class="invalid-feedback">
+                            Por favor ingresa un correo valido
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 mb-3">
-                    <label for="address">Telefono</label>
-                    <input type="text" class="form-control" id="address" placeholder="XX-XX-XX-XX-XX" required>
-                    <div class="invalid-feedback">
-                        Ingresa un número de telefono
+                    <div class="col-md-4 mb-3">
+                        <label for="address">Telefono</label>
+                        <input type="text" class="form-control" id="address" placeholder="XX-XX-XX-XX-XX" required>
+                        <div class="invalid-feedback">
+                            Ingresa un número de telefono
+                        </div>
                     </div>
                 </div>
-            </div>    
-            <hr class="mb-4">
+                <hr class="mb-4">
                 <div class="row">
                     <div class="col-md-5 mb-3">
                         <label for="country">Estado</label>
