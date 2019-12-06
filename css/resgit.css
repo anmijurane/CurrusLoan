@@ -6,7 +6,7 @@
 
 .btn-primary:hover {
     background: #ffffff;
-    color: rgba(101, 167, 160, 0.705);
+    color: #65A7A0;
     border-color: #65A7A0;
 }
 
@@ -19,8 +19,7 @@
 }
 
 #var-style{
-    background: #65A7A0;
-    margin-top: 
+    background: #65A7A0;    
 }
 
 .img-Loan{
